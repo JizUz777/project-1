@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Tajawal:wght@900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+font-family: 'Tajawal', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background:rgb(28, 28, 28);
+    overflow: hidden;
+}
+.container{
+    display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.container .box{
+    transform-style: preserve-3d;
+    animation: animate 25s linear infinite;
+
+}
+@keyframes animate{
+    0%{
+        transform: perspective(1000px) rotateX(360deg) rotate(25deg) rotateY(20deg) rotateZ(15deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateX(0deg) rotate(25deg) rotateY(20deg) rotateZ(15deg);
+    }
+}
+.container .box span{
+position: absolute;
+color: #fff;
+font-size: 3.5em;
+white-space: nowrap;
+text-transform: uppercase;
+font-weight: 900;
+padding: 0 10px;
+background: linear-gradient(90deg,transparent,rgba(0 0 0  0.25),transparent);
+line-height: 0.7em;
+transform-style: preserve-3d;
+text-shadow: 0 5px 15px rgba(0.0.0.0.25);
+transform: translate(-50%,-50%) rotateX(calc(var(--i)*22.5deg))
+translateZ(106px);
+
+}
+
+.container .box span i:nth-child(1){
+    font-style: initial;
+    color:#fe7e06;
+}
+.container .box span i:nth-child(2){
+    font-style: initial;
+    color: #f9fcfb;
+
+   
+}
+.container .box span i:nth-child(3){
+    font-style: initial;
+    color:#24ff7f;
+   
+}
+
+
+
+.container .box span i:nth-child(4){
+    font-style: initial;
+    color:#24ff7f;
+   
+}
